@@ -1,4 +1,3 @@
-// Функция для проверки видимости элементов при прокрутке
 document.addEventListener('DOMContentLoaded', function() {
     const sections = document.querySelectorAll('.section');
 
