@@ -147,7 +147,7 @@ nav ul li a:hover {
     object-fit: cover;
     border-radius: 8px;
     transition: transform 0.3s;
-    
+
 }
 
 .gallery-image:hover {
@@ -197,6 +197,7 @@ footer {
     text-align: center;
     color: #ffffff;
 }
+
 footer a {
     color: #ffffff;
     text-decoration: none;
@@ -210,10 +211,51 @@ footer a:hover {
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
+        align-items: center; 
+    }
+
+    nav ul li {
+        margin: 10px 0; 
     }
 
     .blog-posts {
         flex-direction: column;
         align-items: center;
+    }
+
+    .post {
+        width: 100%; 
+        max-width: 300px; 
+    }
+
+    .section h2, .section h3 {
+        font-size: 1.5em; 
+    }
+
+    .contact-form {
+        width: 90%; 
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em; 
+    }
+
+    .section h2 {
+        font-size: 1.3em; 
+    }
+
+    .post h3 {
+        font-size: 1.2em; 
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 0.9em; 
+    }
+
+    .contact-form button {
+        font-size: 0.9em; 
     }
 }
